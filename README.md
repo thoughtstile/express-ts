@@ -26,10 +26,10 @@ npm i express cors dotenv &&
 
 ### dev dependencies
 # typescript
-npm i -D typescript tslint ts-node nodemon supertest &&
+npm i -D typescript tslint ts-node nodemon &&
 
 # testing
-npm i -D jest ts-jest &&
+npm i -D jest ts-jest supertest &&
 
 # types
 npm i -D @types/node @types/express @types/cors @types/dotenv @types/supertest @types/jest
