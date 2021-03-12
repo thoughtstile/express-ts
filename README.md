@@ -1,4 +1,4 @@
-# Setup an Express server with Typescript
+# Use Typescript with Node.js and Express
 
 Setting up a new project can be overwhelming with the amount of options available.
 
