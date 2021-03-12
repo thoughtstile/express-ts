@@ -2,7 +2,7 @@
 
 Setting up a new project can be overwhelming with the amount of options available.
 
-Here is a basic express server configured to use typescript.
+Here is a basic Express server configured to use Typescript.
 
 Included:
 
