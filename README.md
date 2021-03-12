@@ -30,21 +30,20 @@ npm i -D jest ts-jest &&
 npm i -D @types/node @types/express @types/cors @types/dotenv @types/node @types/supertest @types/jest
 ```
 
-
 ## Server + Config Files
 
 ```sh
-# express server files
-touch ./src/app.ts ./src/index.ts &&
-
-# test file
-touch ./src/app.test.ts  &&
-
 # configuration files
 touch tsconfig.json tslint.json jest.config.js &&
 
 # .gitignore and .env
-touch .gitignore .env
+touch .gitignore .env &&
+
+# express server files
+touch ./src/app.ts ./src/index.ts &&
+
+# test file
+touch ./src/app.test.ts
 ```
 
 ## `package.json`
@@ -59,54 +58,6 @@ touch .gitignore .env
     "test": "jest"
   }
 }
-```
-
-## `app.ts`
-
-```ts
-import express from 'express';
-
-const app: express.Application = express();
-
-app.use(express.json());
-
-app.get('/', (req: express.Request, res: express.Response) => {
-  res.status(200).send('hello world');
-});
-
-export default app;
-```
-
-## `index.ts`
-
-```ts
-import 'dotenv/config';
-import app from './app';
-
-const PORT = process.env.PORT || 8080;
-
-app.listen(PORT, () => {
-  // tslint:disable-next-line:no-console
-  console.log(`server listening on port ${PORT}`);
-});
-```
-
-## `app.test.ts`
-
-```ts
-import request from 'supertest';
-import app from './app';
-
-describe('Test the root path', () => {
-  test('It should response the GET method', async () => {
-    const response = await request(app).get('/');
-    expect(response.status).toBe(200);
-  });
-  test("It should response the with 'hello world'", async () => {
-    const response = await request(app).get('/');
-    expect(response.text).toEqual('hello world');
-  });
-});
 ```
 
 ## `tsconfig.json`
@@ -165,4 +116,52 @@ node_modules
 
 ```
 PORT=8080
+```
+
+## `app.ts`
+
+```ts
+import express from 'express';
+
+const app: express.Application = express();
+
+app.use(express.json());
+
+app.get('/', (req: express.Request, res: express.Response) => {
+  res.status(200).send('hello world');
+});
+
+export default app;
+```
+
+## `index.ts`
+
+```ts
+import 'dotenv/config';
+import app from './app';
+
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+  // tslint:disable-next-line:no-console
+  console.log(`server listening on port ${PORT}`);
+});
+```
+
+## `app.test.ts`
+
+```ts
+import request from 'supertest';
+import app from './app';
+
+describe('Test the root path', () => {
+  test('It should response the GET method', async () => {
+    const response = await request(app).get('/');
+    expect(response.status).toBe(200);
+  });
+  test("It should response the with 'hello world'", async () => {
+    const response = await request(app).get('/');
+    expect(response.text).toEqual('hello world');
+  });
+});
 ```
