@@ -9,7 +9,6 @@ Included:
 - nodemon (development)
 - jest (testing)
 - cors (middleware)
-- bodyparser (middleware)
 - tslint (linting)
 
 ## Initial Setup
