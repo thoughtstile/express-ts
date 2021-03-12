@@ -9,22 +9,14 @@
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thoughtstile/express-typescript-starter.git"
-  },
   "keywords": [
     "express",
     "typescript",
     "nodejs",
     "starter"
   ],
-  "author": "thoughtstile",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thoughtstile/express-typescript-starter/issues"
-  },
-  "homepage": "https://github.com/thoughtstile/express-typescript-starter#readme",
+  "author": "",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
