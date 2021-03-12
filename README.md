@@ -6,11 +6,11 @@ Here is a basic Express server configured to use Typescript.
 
 Included:
 
-- nodemon
-- jest
-- cors
-- bodyparser
-- tslint
+- nodemon (development)
+- jest (testing)
+- cors (middleware)
+- bodyparser (middleware)
+- tslint (linting)
 
 ## Initial Setup
 
