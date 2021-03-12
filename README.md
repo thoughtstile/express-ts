@@ -32,7 +32,7 @@ npm i -D typescript tslint ts-node nodemon &&
 npm i -D jest ts-jest supertest &&
 
 # types
-npm i -D @types/express @types/node @types/cors @types/dotenv @types/jest @types/supertest
+npm i -D @types/express @types/cors @types/dotenv @types/node @types/jest @types/supertest
 ```
 
 ## Server + Config Files
