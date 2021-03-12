@@ -15,8 +15,6 @@ Included:
 ## Initial Setup
 
 ```sh
-mkdir server &&
-cd server &&
 mkdir src &&
 npm init
 ```
