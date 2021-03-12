@@ -1,7 +1,7 @@
 {
   "name": "express-typescript-starter",
   "version": "1.0.0",
-  "description": "A basic Express server setup with typescript.",
+  "description": "A basic express server setup with typescript.",
   "main": "src/index.ts",
   "scripts": {
     "start": "ts-node ./src/index.ts",
