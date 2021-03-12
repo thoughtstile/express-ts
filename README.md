@@ -4,6 +4,13 @@ Setting up a new project can be overwhelming with the amount of options availabl
 
 Here is a basic express server configured to use typescript.
 
+Included:
+
+- nodemon
+- jest
+- cors and bodyparser
+- tslint
+
 ## Initial Setup
 
 ```sh
@@ -17,17 +24,17 @@ npm init
 
 ```sh
 ### app dependencies
-npm i express winston express-winston cors dotenv &&
+npm i express cors dotenv &&
 
 ### dev dependencies
 # typescript
-npm i -D typescript tslint ts-node tslint-config-airbnb nodemon supertest &&
+npm i -D typescript tslint ts-node nodemon supertest &&
 
 # testing
 npm i -D jest ts-jest &&
 
 # types
-npm i -D @types/node @types/express @types/cors @types/dotenv @types/node @types/supertest @types/jest
+npm i -D @types/node @types/express @types/cors @types/dotenv @types/supertest @types/jest
 ```
 
 ## Server + Config Files
@@ -109,16 +116,19 @@ module.exports = {
 
 ```ts
 import express from 'express';
+import cors from 'cors';
 
 const app: express.Application = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.get('/', (req: express.Request, res: express.Response) => {
   res.status(200).send('hello world');
 });
 
 export default app;
+
 ```
 
 ## `index.ts`
