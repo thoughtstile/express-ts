@@ -36,14 +36,14 @@ npm i -D @types/node @types/express @types/cors @types/dotenv @types/node @types
 # configuration files
 touch tsconfig.json tslint.json jest.config.js &&
 
-# .gitignore and .env
-touch .gitignore .env &&
-
 # express server files
 touch ./src/app.ts ./src/index.ts &&
 
 # test file
 touch ./src/app.test.ts
+
+# .gitignore and .env
+touch .gitignore .env &&
 ```
 
 ## `package.json`
@@ -105,19 +105,6 @@ module.exports = {
 };
 ```
 
-## `.gitignore`
-
-```
-node_modules
-.env
-```
-
-## `.env`
-
-```
-PORT=8080
-```
-
 ## `app.ts`
 
 ```ts
@@ -164,4 +151,17 @@ describe('Test the root path', () => {
     expect(response.text).toEqual('hello world');
   });
 });
+```
+
+## `.gitignore`
+
+```
+node_modules
+.env
+```
+
+## `.env`
+
+```
+PORT=8080
 ```
