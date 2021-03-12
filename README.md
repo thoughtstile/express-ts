@@ -49,7 +49,7 @@ touch .gitignore .env
 
 ## `package.json`
 
-```json
+```js
 {
   // ...
   "scripts": {
