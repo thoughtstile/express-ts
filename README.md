@@ -8,7 +8,8 @@ Included:
 
 - nodemon
 - jest
-- cors and bodyparser
+- cors
+- bodyparser
 - tslint
 
 ## Initial Setup
