@@ -1,0 +1,50 @@
+{
+  "name": "express-typescript-starter",
+  "version": "1.0.0",
+  "description": "A basic express server setup with typescript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoughtstile/express-typescript-starter.git"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "starter"
+  ],
+  "author": "thoughtstile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thoughtstile/express-typescript-starter/issues"
+  },
+  "homepage": "https://github.com/thoughtstile/express-typescript-starter#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-winston": "^4.1.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.33",
+    "@types/supertest": "^2.0.10",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3",
+    "ts-jest": "^26.5.3",
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^4.2.3"
+  }
+}
