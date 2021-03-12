@@ -25,7 +25,7 @@ npm init
 npm i express cors dotenv &&
 
 ### dev dependencies
-# typescript
+# typescript + node
 npm i -D typescript tslint ts-node nodemon &&
 
 # testing
