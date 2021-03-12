@@ -32,7 +32,7 @@ npm i -D typescript tslint ts-node nodemon &&
 npm i -D jest ts-jest supertest &&
 
 # types
-npm i -D @types/node @types/express @types/cors @types/dotenv @types/supertest @types/jest
+npm i -D @types/express @types/node @types/cors @types/dotenv @types/jest @types/supertest
 ```
 
 ## Server + Config Files
@@ -45,10 +45,10 @@ touch tsconfig.json tslint.json jest.config.js &&
 touch ./src/app.ts ./src/index.ts &&
 
 # test file
-touch ./src/app.test.ts
+touch ./src/app.test.ts &&
 
 # .gitignore and .env
-touch .gitignore .env &&
+touch .gitignore .env
 ```
 
 ## `package.json`
